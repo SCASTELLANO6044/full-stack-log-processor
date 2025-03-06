@@ -1,0 +1,3 @@
+fullstack-log-processor/node_modules
+fullstack-log-processor/*.env
+fullstack-log-processor/*.next
