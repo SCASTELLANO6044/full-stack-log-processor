@@ -29,13 +29,13 @@ const worker = new Worker(
 
         await supabase.from('log_stats').insert([
           {
-            jobId: fileId,
             timestamp,
             level,
             message,
             payload,
             keywords: hasKeyword ? keywords.join(',') : null,
             ips: ip,
+            jobId: fileId,
           },
         ]);
       }
