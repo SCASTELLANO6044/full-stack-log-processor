@@ -2,11 +2,13 @@
   "name": "fullstack-log-processor",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "worker": "node src/workers/logProcessor.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",
